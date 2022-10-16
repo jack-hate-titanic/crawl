@@ -2,7 +2,7 @@
  * @Author: 悦者生存 1002783067@qq.com
  * @Date: 2022-10-13 21:10:30
  * @LastEditors: 悦者生存 1002783067@qq.com
- * @LastEditTime: 2022-10-13 21:23:13
+ * @LastEditTime: 2022-10-16 21:31:52
  * @FilePath: /crawl/db.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -13,7 +13,9 @@ let connection = mysql.createConnection({
   port: 3306,
   database: 'crawl',
   user: 'root',
-  password: '123456'
+  password: '123456',
+  charset: 'utf8mb4',
+  collate: 'utf8mb4_unicode_ci'
 });
 connection.connect();
 module.exports = Promise.promisify(connection.query).bind(connection);

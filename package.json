@@ -4,7 +4,7 @@
   "description": "掘金爬虫",
   "main": "index.js",
   "scripts": {
-    "start": "export DEBUG=crawl:write:articles && nodemon ./main.js",
+    "start": "nodemon ./web/bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +22,16 @@
     "axios": "^1.1.2",
     "cheerio": "^1.0.0-rc.12",
     "debug": "^4.3.4",
+    "ejs": "^3.1.8",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.0",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.20",
     "puppeteer": "^18.2.1",

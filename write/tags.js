@@ -2,7 +2,7 @@
  * @Author: 悦者生存 1002783067@qq.com
  * @Date: 2022-10-13 21:09:54
  * @LastEditors: 悦者生存 1002783067@qq.com
- * @LastEditTime: 2022-10-13 21:49:52
+ * @LastEditTime: 2022-10-16 20:26:00
  * @FilePath: /crawl/wirte/tags.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -20,6 +20,7 @@ let tags = async function(tags){
       }
       debug(`成功保存标签:${tag.name}`);
   }
+  return await query(`select * from tags`);
 }
 module.exports = {
     tags
