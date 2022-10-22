@@ -4,7 +4,8 @@
   "description": "掘金爬虫",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./web/bin/www",
+    "start:serve": "nodemon ./web/bin/www",
+    "start:crawl": "nodemon main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
